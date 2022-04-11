@@ -6,6 +6,7 @@ public class ItemDeVenta {
     private int cantidad;
     private double precioUnitario;
 
+    public ItemDeVenta(){};
     public ItemDeVenta(int id, String descripcion, int cantidad, double precioUnitario){
         this.id=id;
         this.descripcion=descripcion;

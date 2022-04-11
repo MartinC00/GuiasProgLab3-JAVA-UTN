@@ -6,7 +6,7 @@ public class Hora {
     private int minutos;
     private int segundos;
 
-
+    public Hora(){};
     public Hora(int horas, int minutos, int segundos){
 
         this.horas = (horas<25 && horas>-1)? horas : 0;

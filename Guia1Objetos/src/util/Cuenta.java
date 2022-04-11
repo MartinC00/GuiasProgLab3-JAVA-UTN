@@ -6,6 +6,7 @@ public class Cuenta {
     private String nombre;
     private double balance;
 
+    public Cuenta(){};
     public Cuenta(int id, String nombre, double balance){
         this.id=id;
         this.nombre=nombre;

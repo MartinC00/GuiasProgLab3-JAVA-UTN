@@ -6,7 +6,6 @@ public class Rectangulo {
     private double ancho=1.0;
 
     public Rectangulo(){}
-
     public Rectangulo(double alto, double ancho){
         if(ancho>alto) { this.alto=alto; this.ancho=ancho; }
     }
