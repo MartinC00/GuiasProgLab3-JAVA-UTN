@@ -1,4 +1,4 @@
-package util;
+package Objects.Ejercicio5;
 
 public class Hora {
 

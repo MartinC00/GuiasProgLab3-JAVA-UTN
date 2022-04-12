@@ -1,4 +1,4 @@
-package util;
+package Objects.Ejercicio1;
 
 public class Rectangulo {
 

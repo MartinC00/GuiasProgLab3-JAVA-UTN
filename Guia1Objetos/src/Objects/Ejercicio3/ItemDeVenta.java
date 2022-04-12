@@ -1,4 +1,4 @@
-package util;
+package Objects.Ejercicio3;
 
 public class ItemDeVenta {
     private int id;

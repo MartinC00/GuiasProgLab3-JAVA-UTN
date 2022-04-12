@@ -1,11 +1,13 @@
-package util;
+package Objects.Ejercicio2;
 import org.apache.commons.lang3.RandomStringUtils;
+import java.util.UUID;
 
 public class Cliente {
     private String nombre;
     private String email;
     private int descuento;
     private String id = RandomStringUtils.randomAlphanumeric(10);
+    private UUID id2 = UUID.randomUUID(); //Cree esta ID para cumplir con la consigna del UUID, por eso hay 2, pero mi idea inicial fue crear el id con el randomAlphanumeric de la libreria apache
 
     public Cliente(){};
 
@@ -54,7 +56,8 @@ public class Cliente {
                 "nombre='" + nombre + '\'' +
                 ", email='" + email + '\'' +
                 ", descuento=" + descuento +
-                ", id='" + id + '\'' +
+                "%, id='" + id + '\'' +
+                ", id2=" + id2 +
                 '}';
     }
 }

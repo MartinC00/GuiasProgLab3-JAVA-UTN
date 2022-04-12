@@ -1,4 +1,4 @@
-package util;
+package Objects.Ejercicio2;
 
 public class Empleado {
 

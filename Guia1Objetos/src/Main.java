@@ -1,8 +1,8 @@
-import util.Rectangulo;
-import util.Empleado;
-import util.ItemDeVenta;
-import util.Cuenta;
-import util.Hora;
+import Objects.Ejercicio1.Rectangulo;
+import Objects.Ejercicio2.Empleado;
+import Objects.Ejercicio3.ItemDeVenta;
+import Objects.Ejercicio4.Cuenta;
+import Objects.Ejercicio5.Hora;
 
 public class Main {
 
