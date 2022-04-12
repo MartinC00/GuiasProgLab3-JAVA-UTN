@@ -1,5 +1,6 @@
 package Objects.Ejercicio3;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Cuenta {
@@ -7,7 +8,7 @@ public class Cuenta {
     private String ID;
     private double balance;
     private ClienteCuenta clienteCuenta;
-    private double [] registroOperaciones;
+    private String[] registroOperaciones;
 
 
     public Cuenta(){};
@@ -19,7 +20,7 @@ public class Cuenta {
         this.clienteCuenta=clienteCuenta;
     }
      */
-    public Cuenta(String ID, double balance, ClienteCuenta clienteCuenta, double []registroOperaciones){
+    public Cuenta(String ID, double balance, ClienteCuenta clienteCuenta, String[] registroOperaciones){
         this.ID=ID;
         this.balance=balance;
         this.clienteCuenta=clienteCuenta;
@@ -28,12 +29,20 @@ public class Cuenta {
 
     public void guardarRegistro(double monto){
         int i=0;
-            while(i<registroOperaciones.length && registroOperaciones[i]!=0){
-                i++;
-            }
-            if(i<registroOperaciones.length) registroOperaciones[i]=monto;
+        while(i<10 && registroOperaciones[i]!=null) {
+            i++;
         }
-
+            if(i<10){
+                System.out.println(i);
+                if(monto>0){
+                    registroOperaciones[i]="El cliente "+clienteCuenta.getNombre()+" depositó $"+monto;
+                }
+                else
+                {
+                    registroOperaciones[i]="El cliente "+clienteCuenta.getNombre()+" retiró $"+monto;
+                }
+            }
+        }
     public double Depositar(double deposito){
         setBalance(getBalance()+deposito);
         guardarRegistro(deposito);
@@ -58,6 +67,11 @@ public class Cuenta {
             System.out.println("El saldo es insuficiente para realizar la extraccion, por favor revise el monto y reintente.");
         }
         return getBalance();
+    }
+    public void mostrarRegistro(){
+        for(String registro: registroOperaciones){
+            System.out.println(registro);
+        }
     }
 
 

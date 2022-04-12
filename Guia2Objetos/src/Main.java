@@ -2,13 +2,15 @@ import Objects.Ejercicio1.*;
 import Objects.Ejercicio2.*;
 import Objects.Ejercicio3.*;
 
+import java.util.ArrayList;
+
 
 public class Main {
 
     public static void main(String[] args) {
         //Ej1();
         //Ej2();
-        //Ej3();
+       Ej3();
 
 
     }
@@ -54,7 +56,7 @@ public class Main {
         ClienteCuenta clienteRafa= new ClienteCuenta("Rafael", "1H", 'M');
         System.out.println(clienteRafa);
 
-        double []registroOperaciones = new double[10];
+        String[] registroOperaciones = new String[10];
         Cuenta cuenta = new Cuenta("A10",10000, clienteRafa, registroOperaciones);
 
         System.out.println("El balance inicial de la cuenta es: "+cuenta.getBalance());
@@ -75,11 +77,13 @@ public class Main {
         System.out.println("Extraccion deudora de 5000, balance: "+cuenta.ExtraerDeudor(5000));
         System.out.println("Deposito de 3000, balance: "+cuenta.Depositar(3000));
 
-        //Operacion numero 11, no se guarda en el registro pero tampoco rompe
-        System.out.println("OPERACION NUMERO 11: Deposito de 5000, balance: "+cuenta.Depositar(5000));
+        //Operacion numero 11, no se guarda en el registro pero no se rompe
+        System.out.println("OPERACION 11, no se guarda. Deposito de 500, balance: "+cuenta.Depositar(500));
+
 
 
         System.out.println(cuenta);
+
 
 
 
