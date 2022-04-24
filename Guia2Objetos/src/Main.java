@@ -77,7 +77,7 @@ public class Main {
         System.out.println("Extraccion deudora de 5000, balance: "+cuenta.ExtraerDeudor(5000));
         System.out.println("Deposito de 3000, balance: "+cuenta.Depositar(3000));
 
-        //Operacion numero 11, no se guarda en el registro pero no se rompe
+        //Operacion numero 11, no se guarda en el registro y no rompe
         System.out.println("OPERACION 11, no se guarda. Deposito de 500, balance: "+cuenta.Depositar(500));
 
 
