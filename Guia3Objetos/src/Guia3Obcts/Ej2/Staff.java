@@ -1,6 +1,4 @@
-package Guia3Objcts.Ej2;
-
-import java.util.ArrayList;
+package Guia3Obcts.Ej2;
 
 public class Staff extends Persona{
 

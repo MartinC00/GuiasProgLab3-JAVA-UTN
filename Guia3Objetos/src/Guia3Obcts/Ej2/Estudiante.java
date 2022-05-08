@@ -1,6 +1,4 @@
-package Guia3Objcts.Ej2;
-
-import java.util.ArrayList;
+package Guia3Obcts.Ej2;
 
 public class Estudiante extends Persona{
 
@@ -8,7 +6,8 @@ public class Estudiante extends Persona{
     private double cuotaMensual;
     private String carrera;
 
-    public Estudiante(){}
+    public Estudiante(){
+    }
     public Estudiante(String nombre, String apellido, String DNI, String direccion, String email, String añoIngreso, double cuotaMensual, String carrera){
         super(nombre, apellido, DNI, email, direccion);
         this.añoIngreso=añoIngreso;

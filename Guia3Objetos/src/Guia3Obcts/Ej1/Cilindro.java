@@ -1,4 +1,4 @@
-package Guia3Objcts.Ej1;
+package Guia3Obcts.Ej1;
 
 public class Cilindro extends Circulo{
 

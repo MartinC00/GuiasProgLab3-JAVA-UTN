@@ -1,8 +1,6 @@
-package Guia3Objcts.Ej2;
+package Guia3Obcts.Ej2;
 
-import java.util.ArrayList;
-
-public abstract class Persona {
+public class Persona {
      protected String nombre;
      protected String apellido;
      protected String DNI;
